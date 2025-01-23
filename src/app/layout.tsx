@@ -7,35 +7,59 @@ import { NavBar } from "@/components/ui/Navbar"
 import { siteConfig } from "./siteConfig"
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yoururl.com"),
-  title: siteConfig.name,
-  description: siteConfig.description,
-  keywords: ["Marketing", "Database", "Software"],
+  metadataBase: new URL("https://solartech.com"), // Replace with actual domain if different
+  title: "Solar Technologies - Smart Farming Solutions", // More descriptive title
+  description: "AI-powered solutions for sustainable, efficient, and profitable farming. Autonomous monitoring, precision agriculture, smart irrigation, and more.", // Compelling description
+  keywords: [
+    "Smart Farming",
+    "Precision Agriculture",
+    "Autonomous Farming",
+    "Agricultural Technology",
+    "AgTech",
+    "Farm Automation",
+    "Drones",
+    "Sensors",
+    "Irrigation",
+    "Yield Analytics",
+    "Sustainable Farming",
+  ],
   authors: [
     {
-      name: "yourname",
-      url: "",
+      name: "Solar Technologies, Inc.", // Use company name
+      url: "https://solartech.com/about", // Link to about us page
     },
   ],
-  creator: "yourname",
+  creator: "Solar Technologies, Inc.",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: siteConfig.url,
-    title: siteConfig.name,
-    description: siteConfig.description,
-    siteName: siteConfig.name,
+    url: "https://solartech.com", // Full URL
+    title: "Solar Technologies - Smart Farming Solutions",
+    description: "AI-powered solutions for sustainable, efficient, and profitable farming. Autonomous monitoring, precision agriculture, smart irrigation, and more.",
+    siteName: "Solar Technologies",
+    images: [
+        {
+            url: "https://solartech.com/images/og-image.jpg", // Add a relevant image URL here
+            width: 1200,
+            height: 630,
+            alt: "Solar Technologies Smart Farming Solutions",
+        }
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: siteConfig.name,
-    description: siteConfig.description,
-    creator: "@yourname",
+    title: "Solar Technologies - Smart Farming Solutions",
+    description: "AI-powered solutions for sustainable, efficient, and profitable farming. Autonomous monitoring, precision agriculture, smart irrigation, and more.",
+    creator: "@SolarTechAg", // Replace with actual Twitter handle if available
+    images: {
+        url: "https://solartech.com/images/twitter-card.jpg", // Add a relevant image URL here
+        alt: "Solar Technologies Smart Farming Solutions",
+    },
   },
   icons: {
     icon: "/favicon.ico",
   },
-}
+};
 
 export default function RootLayout({
   children,
