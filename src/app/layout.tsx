@@ -8,8 +8,8 @@ import { siteConfig } from "./siteConfig"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://solartech.com"), // Replace with actual domain if different
-  title: "Solar Technologies - Smart Farming Solutions", // More descriptive title
-  description: "AI-powered solutions for sustainable, efficient, and profitable farming. Autonomous monitoring, precision agriculture, smart irrigation, and more.", // Compelling description
+  title: siteConfig.name,
+  description: siteConfig.description,
   keywords: [
     "Smart Farming",
     "Precision Agriculture",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   ],
   authors: [
     {
-      name: "Solar Technologies, Inc.", // Use company name
+      name: "QuadraxAI, Inc.", // Use company name
       url: "https://solartech.com/about", // Link to about us page
     },
   ],
